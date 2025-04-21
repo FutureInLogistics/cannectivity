@@ -1,0 +1,17 @@
+identifier: fdcanusb
+name: mjbots fdcanusb
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 128
+flash: 512
+supported:
+  - gpio
+  - watchdog
+  - can
+  - timer
+  - rtc
+vendor: mjbots

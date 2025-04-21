@@ -1,0 +1,13 @@
+# Copyright (c) 2025 Filics
+# SPDX-License-Identifier: LicenseRef-Filics
+
+board:
+  name: fdcanusb
+  vendor: mjbots
+  socs:
+    - name: stm32g474xx
+  revision:
+    format: major.minor.patch
+    default: "1.0.0"
+    revisions:
+    - name: "1.0.0"

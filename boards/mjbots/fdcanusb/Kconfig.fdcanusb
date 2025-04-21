@@ -1,0 +1,8 @@
+# mjbots fdcanusb board configuration
+
+# Copyright (c) 2025 Filics
+# SPDX-License-Identifier: LicenseRef-Filics
+
+config BOARD_FDCANUSB
+	bool "mjbots fdcanusb"
+	select SOC_STM32G474XX

@@ -1,0 +1,29 @@
+# Copyright (c) 2025 Filics
+# SPDX-License-Identifier: LicenseRef-Filics
+
+# enable GPIO
+CONFIG_GPIO=y
+
+# Enable STM32 Die Temp Sensor
+CONFIG_STM32_TEMP=y
+CONFIG_ADC=y
+CONFIG_SENSOR=y
+
+# Enable Clocks
+CONFIG_CLOCK_CONTROL=y
+
+# Console (If you want to use console, then activate it in your application prj.conf)
+CONFIG_CONSOLE=n
+CONFIG_UART_CONSOLE=n
+
+# Enable MPU
+CONFIG_ARM_MPU=y
+
+# Enable HW stack protection
+CONFIG_HW_STACK_PROTECTION=y
+
+# enable pin controller
+CONFIG_PINCTRL=y
+
+# Retrieve flash parameters at runtime. This way we dont have to specify the jedec-id in dts
+CONFIG_SPI_NOR_SFDP_RUNTIME=y
