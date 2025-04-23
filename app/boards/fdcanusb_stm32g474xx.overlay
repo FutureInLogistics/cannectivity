@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Alexander Kozhinov <ak.alexander.kozhinov@gmail.com>
+ * Copyright (c) 2025 <knippenberg@filics.eu>
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -14,9 +14,10 @@
 
 		channel0 {
 			compatible = "cannectivity-channel";
-			can-controller = <&fdcan1>;
-			state-led = <&blue_led>;
-			activity-leds = <&green_led>;
+			can-controller = <&fdcan2>;
+			termination-gpios = <&gpiob 14 GPIO_ACTIVE_LOW>;
+			state-led = <&led_can_state>;
+			activity-leds = <&led_can_rx &led_can_tx>;
 		};
 	};
 };
